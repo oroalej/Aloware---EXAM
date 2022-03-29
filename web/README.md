@@ -1,24 +1,12 @@
-# web
+## Local setup
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
+1. Clone the repo
+ ```sh
+   git clone https://github.com/oroalej/Aloware---EXAM.git
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
+2. Start the applications
+  ```sh
+   yarn && yarn serve
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

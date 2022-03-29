@@ -17,9 +17,16 @@ DB_PASSWORD=
 ```
 
 5. Start the applications
-```sh
-php artisan key:generate
-php artisan optimize
-php artisan migrate
-php artisan serve
-```
+    1. Api
+    ```sh
+       php artisan migrate
+       php artisan serve
+    ```
+
+    2. Web
+    ```sh
+       yarn && yarn serve
+    ```
+
+## Technology
+This project is powered by `Laravel`, `VueJS`, `Tailwind CSS`
