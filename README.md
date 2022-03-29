@@ -1,3 +1,5 @@
+![Screenshot](https://i.imgur.com/YLniJuJ.jpeg)
+
 ## Local setup
 
 1. Clone the repo

@@ -2,9 +2,9 @@
     <div class='relative mb-6'>
         <div class='relative mb-4'>
             <div class='relative mb-2'>
-                <div class='flex flex-row justify-between'>
-                    <p class='font-medium uppercase mb-1'>{{ comment.name }}</p>
-                    <span class='text-sm'>{{ formatDate }}</span>
+                <div class='flex flex-row gap-6 justify-between'>
+                    <p class='font-medium uppercase mb-1 whitespace-nowrap text-ellipsis overflow-hidden'>{{ comment.name }}</p>
+                    <span class='text-sm whitespace-nowrap'>{{ formatDate }}</span>
                 </div>
                 <p class='text-sm'>
                     {{ comment.message }}
@@ -23,7 +23,7 @@
             @cancel='onToggleReply'
         />
 
-        <div class='ml-8' v-if='comment.children.length'>
+        <div class='ml-4 md:ml-8' v-if='comment.children.length'>
             <Comment v-for='child in comment.children'
                      :key='`${comment.id}-${child.id}`'
                      :comment='child'
